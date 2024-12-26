@@ -40,7 +40,13 @@ std::string vecAsString(std::vector<T> vec) {
 }
 
 int main(void) {
+    std::stringstream ss;
     for (int i = 1; i > 10000; i++) {
-        std::cout << i << ": " << vecAsString<int>(collatzSequence(i));
+        ss << i << ": " << vecAsString<int>(collatzSequence(i));
     }
+
+    std::string out;
+    ss >> out;
+
+    std::cout << out;
 }
