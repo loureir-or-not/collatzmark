@@ -13,9 +13,12 @@ only got up to 171.
 ### Benchmarks?
 
 - C++:
+  
   ![Time (mean ± σ):     833.7 µs ± 268.0 µs](./assets/cpp.png)
   POSSIBLY WRONG: It doesn't print anything to stdout, so who knows. Maybe it's skipping the operations.
 - Rust:
+  
   ![Time (mean ± σ):      44.0 ms ±   9.1 ms](./assets/rust.png)
 - Haskell:
+  
   ![Time (mean ± σ):      75.5 ms ±  11.7 ms](./assets/haskell.png)
