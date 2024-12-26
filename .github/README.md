@@ -2,8 +2,6 @@
 
 ## Benchmarking using the Collatz conjecture.
 
----
-
 ### Why?
 
 It's fun to check and see which language is the fastest! I also got
