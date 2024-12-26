@@ -3,7 +3,7 @@ module Main where
 collatz :: Int -> Int
 collatz x
     | even x = x `div` 2
-    | odd x = (x * 3) + 1
+    | otherwise = (x * 3) + 1
 
 collatzList :: Int -> [Int]
 collatzList 1 = []
