@@ -13,6 +13,7 @@ only got up to 171.
 - C++:
   
   ![Time (mean ± σ):     833.7 µs ± 268.0 µs](./assets/cpp.png)
+  
   POSSIBLY WRONG: It doesn't print anything to stdout, so who knows. Maybe it's skipping the operations.
 - Rust:
   
@@ -20,3 +21,8 @@ only got up to 171.
 - Haskell:
   
   ![Time (mean ± σ):      75.5 ms ±  11.7 ms](./assets/haskell.png)
+- Java:
+  
+  ![Time (mean ± σ):      75.5 ms ±  11.7 ms](./assets/java.png)
+  
+  Not fully accurate as this also includes the building process.
