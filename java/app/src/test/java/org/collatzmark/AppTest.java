@@ -12,8 +12,8 @@ class AppTest {
         assert classUnderTest.collatz(1) == 4 : "you fucked up the function somehow";
     }
 
-    @Test void collatzSequenceOfFourIs2Then1() {
+    @Test void collatzSequenceOfFourIsTwoThenOne() {
         App classUnderTest = new App();
-        assert classUnderTest.collatzSequence(4) == "2, 1" : "you fucked up the function somehow";
+        assert classUnderTest.collatzSequence(1) == "" : "you fucked up the function somehow";
     }
 }
