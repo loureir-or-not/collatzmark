@@ -12,9 +12,7 @@ only got up to 171.
 
 - C++:
   
-  ![Time (mean ± σ):     833.7 µs ± 268.0 µs](./assets/cpp.png)
-  
-  POSSIBLY WRONG: It doesn't print anything to stdout, so who knows. Maybe it's skipping the operations.
+  ![Time (mean ± σ):      48.7 ms ±   8.2 ms](./assets/cpp.png)
 - Rust:
   
   ![Time (mean ± σ):      44.0 ms ±   9.1 ms](./assets/rust.png)

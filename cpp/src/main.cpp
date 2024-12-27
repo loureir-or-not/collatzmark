@@ -1,52 +1,31 @@
-#include <vector>
-#include <sstream>
 #include <iostream>
+#include <sstream>
 
 int collatz(int x) {
-    bool isEven = x % 2 == 0;
-
-    if (isEven) {
+    if (x % 2 == 0)
         return x / 2;
-    } else {
-        return x * 3 + 1;
-    }
+
+    return 3 * x + 1;
 }
 
-std::vector<int> collatzSequence(int x) {
-    if (x < 1)
-        return {};
+std::string collatzSequence(int x) {
+    if (x == 1)
+        return "";
 
-    std::vector<int> seq(x);
-    while (x > 1) {
-        int cx = collatz(x);
-        seq.push_back(cx);
-        x = cx;
-    }
-
-    return seq;
-}
-
-template <typename T>
-std::string vecAsString(std::vector<T> vec) {
     std::stringstream ss;
-    for (const auto i : vec) {
-        ss << i << ", ";
-    }
-
     std::string res;
-    ss >> res;
 
+    for (int i = collatz(x); i > 1; i = collatz(i))
+        ss << i << ',';
+
+    ss << "1";
+    ss >> res;
     return res;
 }
 
-int main(void) {
-    std::stringstream ss;
-    for (int i = 1; i > 10000; i++) {
-        ss << i << ": " << vecAsString<int>(collatzSequence(i));
-    }
+int main() {
+    for (int i = 1; i <= 10000; i++)
+        std::cout << i << ": " << collatzSequence(i) << std::endl;
 
-    std::string out;
-    ss >> out;
-
-    std::cout << out;
+    return 0;
 }
