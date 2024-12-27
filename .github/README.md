@@ -12,7 +12,7 @@ only got up to 171.
 
 - C++:
   
-  ![Time (mean ± σ):      48.7 ms ±   8.2 ms](./assets/cpp.png)
+  ![Time (mean ± σ):      38.1 ms ±  13.1 ms](./assets/cpp.png)
 - Rust:
   
   ![Time (mean ± σ):      44.0 ms ±   9.1 ms](./assets/rust.png)

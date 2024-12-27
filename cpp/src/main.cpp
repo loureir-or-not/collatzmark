@@ -13,14 +13,12 @@ std::string collatzSequence(int x) {
         return "";
 
     std::stringstream ss;
-    std::string res;
 
     for (int i = collatz(x); i > 1; i = collatz(i))
-        ss << i << ',';
+        ss << i << ", ";
 
     ss << "1";
-    ss >> res;
-    return res;
+    return ss.str();
 }
 
 int main() {
