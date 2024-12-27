@@ -29,7 +29,7 @@ std::vector<int> collatzSequence(int x) {
 template <typename T>
 std::string vecAsString(std::vector<T> vec) {
     std::stringstream ss;
-    for (const auto i: vec) {
+    for (const auto i : vec) {
         ss << i << ", ";
     }
 

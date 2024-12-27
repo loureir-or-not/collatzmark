@@ -1,3 +1,5 @@
 /haskell/dist-newstyle
 /rust/target
 /cpp/collatzmark
+/java/.gradle
+/java/app/build
