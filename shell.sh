@@ -15,6 +15,7 @@ collatz_sequence() {
     echo "1"
 }
 
-for i in {1..10000}; do
+for i in {1..10000}
+do
     echo "$i: $(collatz_sequence $i)"
 done
