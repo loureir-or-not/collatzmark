@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+require "collatzmark"
+
+(1..10_000).each { |i| puts "#{i}: #{Collatzmark.collatz_sequence i}" }

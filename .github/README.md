@@ -53,6 +53,9 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - Go:
   
   ![Time (mean ± σ):      64.9 ms ±   7.1 ms](./assets/go.png)
+- Ruby:
+
+  ![Time (mean ± σ):     351.2 ms ±   4.2 ms](./assets/ruby.png)
 - Bash:
   
   ![I am *not* waiting that long.](https://media1.tenor.com/m/SRTerptFEwcAAAAd/homer-simpson.gif)
