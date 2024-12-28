@@ -3,7 +3,7 @@ defmodule Collatzmark do
     Enum.map(1..10000, fn x -> IO.puts("#{x}: #{collatz_sequence(x)}") end)
   end
 
-require Integer
+  require Integer
 
   def collatz(x) when Integer.is_even(x) do
     Integer.floor_div(x, 2)
@@ -18,6 +18,6 @@ require Integer
   end
 
   def collatz_sequence(x) do
-    [ "#{collatz(x)}," ] ++ collatz_sequence(collatz(x))
+    ["#{collatz(x)},"] ++ collatz_sequence(collatz(x))
   end
 end
