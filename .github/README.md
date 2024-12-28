@@ -50,3 +50,6 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - Elixir:
   
   ![Time (mean ± σ):     508.0 ms ±  75.8 ms](./assets/elixir.png)
+- Bash:
+  ![I am *not* waiting that long.](https://tenor.com/view/homer-simpson-snoring-church-sunday-gif-24793043)
+  
