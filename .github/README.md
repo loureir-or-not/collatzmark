@@ -1,12 +1,14 @@
 # Collatzmark
 
-## Benchmarking using the Collatz conjecture
+Benchmarking using the Collatz conjecture
 
-### Why did you make this?
+---
+
+## Why did you make this?
 
 It's fun to see which language is the fastest!
 
-### Why did you choose Collatz conjecture and why only 10000 iterations?
+## Why did you choose Collatz conjecture and why only 10000 iterations?
 
 I chose Collatz conjecture because it was brought up in a chatroom
 and I thought:
@@ -24,7 +26,7 @@ up in that same chatroom. Someone else there wrote a custom
 version which only printed up to 10000 iterations. Using that,
 I tried writing another implementation and now we are here.
 
-### Benchmarks?
+## Benchmarks?
 
 This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 
@@ -45,4 +47,3 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - OCaml:
   
   ![Time (mean ± σ):     107.8 ms ±   1.2 ms](./assets/ocaml.png)
-  
