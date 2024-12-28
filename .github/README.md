@@ -59,6 +59,9 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - Python:
 
   ![Time (mean ± σ):     292.4 ms ±   6.5 ms](./assets/python.png)
+- Nim:
+  
+  ![Time (mean ± σ):     193.0 ms ±   0.7 ms](./assets/nim.png)
 - Bash:
   
   ![I am *not* waiting that long.](https://media1.tenor.com/m/SRTerptFEwcAAAAd/homer-simpson.gif)
