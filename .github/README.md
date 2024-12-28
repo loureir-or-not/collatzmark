@@ -47,3 +47,6 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - OCaml:
   
   ![Time (mean ± σ):     107.8 ms ±   1.2 ms](./assets/ocaml.png)
+- Elixir:
+  
+  ![Time (mean ± σ):     508.0 ms ±  75.8 ms](./assets/elixir.png)
