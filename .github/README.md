@@ -1,6 +1,6 @@
 # Collatzmark
 
-## Benchmarking using the Collatz conjecture.
+## Benchmarking using the Collatz conjecture
 
 ### Why did you make this?
 
@@ -45,3 +45,4 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - OCaml:
   
   ![Time (mean ± σ):     107.8 ms ±   1.2 ms](./assets/ocaml.png)
+  
