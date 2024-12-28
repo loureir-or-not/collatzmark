@@ -1,10 +1,11 @@
 def collatz(x):
     return x // 2 if x % 2 == 0 else 3 * x + 1
 
+
 def collatz_sequence(x):
     if x == 1:
         return ""
-    
+
     sb = ""
     i = collatz(x)
     while i != 1:
@@ -13,6 +14,7 @@ def collatz_sequence(x):
 
     sb += "1"
     return sb
+
 
 if __name__ == "__main__":
     for i in range(1, 10000):
