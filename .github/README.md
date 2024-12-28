@@ -26,6 +26,8 @@ I tried writing another implementation and now we are here.
 
 ### Benchmarks?
 
+This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
+
 - C++:
   
   ![Time (mean ± σ):      38.1 ms ±  13.1 ms](./assets/cpp.png)
