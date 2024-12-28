@@ -20,3 +20,11 @@
 /ocaml/.merlin
 /ocaml/*.install
 /ocaml/_opam/
+/python/.venv
+/python/bin
+/python/include
+/python/lib
+/python/lib64
+/python/pyvenv.cfg
+/python/dist
+/python/*.egg-info
