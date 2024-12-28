@@ -50,6 +50,9 @@ This is done with `hyperfine`, it does 20 warmup runs before the benchmark.
 - Elixir:
   
   ![Time (mean ± σ):     508.0 ms ±  75.8 ms](./assets/elixir.png)
+- Go:
+  
+  ![Time (mean ± σ):      64.9 ms ±   7.1 ms](./assets/go.png)
 - Bash:
   
   ![I am *not* waiting that long.](https://media1.tenor.com/m/SRTerptFEwcAAAAd/homer-simpson.gif)
