@@ -9,7 +9,7 @@ def collatz_sequence(x):
     sb = ""
     i = collatz(x)
     while i != 1:
-        sb += f"{i}, "
+        sb += f"{i},"
         i = collatz(i)
 
     sb += "1"
