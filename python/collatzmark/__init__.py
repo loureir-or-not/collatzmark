@@ -1,5 +1,5 @@
 def collatz(x):
-    return int(x / 2) if x % 2 == 0 else 3 * x + 1
+    return x // 2 if x % 2 == 0 else 3 * x + 1
 
 def collatz_sequence(x):
     if x == 1:
