@@ -15,7 +15,8 @@ def collatz_sequence(x):
     sb += "1"
     return sb
 
+def __main__():
+    print("\n".join([f"{i + 1}: {collatz_sequence(i + 1)}" for i in range(10000)]))
 
 if __name__ == "__main__":
-    for i in range(1, 10000):
-        print(f"{i}: {collatz_sequence(i)}")
+    __main__()

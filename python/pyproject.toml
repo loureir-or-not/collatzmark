@@ -7,4 +7,4 @@ name = "collatzmark"
 version = "0.0.1"
 
 [project.scripts]
-collatzmark = "collatzmark/__init__"
+collatzmark = "collatzmark:__main__"
