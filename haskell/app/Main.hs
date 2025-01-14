@@ -12,4 +12,4 @@ collatzList x =
     in cx : collatzList cx
 
 main :: IO ()
-main = mapM_ (\x -> putStrLn $ show x ++ ": " ++ show (collatzList x)) [1..10000]
+main = (putStrLn . unlines) (map (\x -> show x ++ ": " ++ show (collatzList x)) [1..10000])
