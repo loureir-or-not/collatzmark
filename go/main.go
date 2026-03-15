@@ -27,6 +27,6 @@ func CollatzSequence(x int) string {
 
 func main() {
 	for i := 1; i <= 10000; i++ {
-		fmt.Printf("%d: %s\n", i, CollatzSequence(i))
+		fmt.Printf("%s\n", CollatzSequence(i))
 	}
 }
