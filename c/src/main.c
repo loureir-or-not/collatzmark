@@ -11,14 +11,12 @@ int collatzSequence(char *buf, int n) {
   if (pos < 0) {
     return -1;
   }
-  int i = n;
-  while (i != 1) {
+  for (int i = n; i != 1; i = collatz(i)) {
     s = snprintf(buf + pos, BUFSIZE - pos, "%d, ", i);
     if (s < 0)
       return -1;
     else
       pos += s;
-    i = collatz(i);
   }
   s = snprintf(buf + pos, BUFSIZE - pos, "1");
   if (s < 0)

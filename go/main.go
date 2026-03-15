@@ -14,11 +14,8 @@ func Collatz(x int) int {
 }
 
 func CollatzSequence(x int) string {
-	if x == 1 {
-		return ""
-	}
-
 	var sb strings.Builder
+	fmt.Fprintf(&sb, "%d: ", x)
 	for i := Collatz(x); i != 1; i = Collatz(i) {
 		fmt.Fprintf(&sb, "%d, ", i)
 	}

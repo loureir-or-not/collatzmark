@@ -6,11 +6,8 @@
 std::string collatzSequence(int x) {
   std::stringstream ss;
   ss << x << ": ";
-  int i = x;
-  while (i != 1) {
+  for (int i = x; i != 1; i = collatz(i))
     ss << i << ", ";
-    i = collatz(i);
-  }
   ss << "1";
   return ss.str();
 }
