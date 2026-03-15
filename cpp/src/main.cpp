@@ -1,29 +1,22 @@
 #include <iostream>
 #include <sstream>
 
-int collatz(int x) {
-    if (x % 2 == 0)
-        return x / 2;
-
-    return 3 * x + 1;
-}
+#define collatz(x) x % 2 == 0 ? x / 2 : 3 * x + 1
 
 std::string collatzSequence(int x) {
-    if (x == 1)
-        return "";
-
-    std::stringstream ss;
-
-    for (int i = collatz(x); i > 1; i = collatz(i))
-        ss << i << ", ";
-
-    ss << "1";
-    return ss.str();
+  std::stringstream ss;
+  ss << x << ": ";
+  int i = x;
+  while (i != 1) {
+    ss << i << ", ";
+    i = collatz(i);
+  }
+  ss << "1";
+  return ss.str();
 }
 
 int main() {
-    for (int i = 1; i <= 10000; i++)
-        std::cout << i << ": " << collatzSequence(i) << std::endl;
-
-    return 0;
+  for (int i = 1; i <= 10000; i++)
+    std::cout << collatzSequence(i) << std::endl;
+  return 0;
 }

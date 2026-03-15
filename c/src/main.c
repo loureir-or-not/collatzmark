@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define collatz(n) n % 2 == 0 \
-  ? n / 2 \
-  : 3 * n + 1 \
+#define collatz(n) n % 2 == 0 ? n / 2 : 3 * n + 1
 
 #define BUFSIZE 8192
 
@@ -15,14 +13,14 @@ int collatzSequence(char *buf, int n) {
   }
   int i = n;
   while (i != 1) {
-    s = snprintf(buf+pos, BUFSIZE-pos, "%d, ", i);
+    s = snprintf(buf + pos, BUFSIZE - pos, "%d, ", i);
     if (s < 0)
       return -1;
     else
       pos += s;
     i = collatz(i);
   }
-  s = snprintf(buf+pos, BUFSIZE-pos, "1");
+  s = snprintf(buf + pos, BUFSIZE - pos, "1");
   if (s < 0)
     return -1;
   else
@@ -31,7 +29,7 @@ int collatzSequence(char *buf, int n) {
 }
 
 int main() {
-  char *buf = malloc(BUFSIZE+1 * sizeof(char *));
+  char *buf = malloc(BUFSIZE + 1 * sizeof(char *));
   if (buf == NULL) {
     fprintf(stderr, "Failed to allocate buffer of %d bytes", BUFSIZE);
     return 1;
